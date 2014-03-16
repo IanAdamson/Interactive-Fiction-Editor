@@ -1,0 +1,77 @@
+#treeview {
+    padding: 10px;
+    float: left;
+    width: calc(100% - 680px);
+    min-height: 400px;
+    border-right: 1px solid #ddd;
+    background: -webkit-linear-gradient(#EFEFEF, white); /* For Safari */
+    background: -o-linear-gradient(#EFEFEF, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#EFEFEF, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#EFEFEF, white); /* Standard syntax */
+}
+
+#treview ul {
+	font-family: Verdana, sans-serif;
+	font-size: 11px;
+	line-height: 18px;
+	padding: 0px;
+	margin: 0px;
+}
+
+#treeview li {
+	list-style: none;
+	padding: 0 0 0 20px;
+	margin: 0px;
+	white-space: nowrap;
+    background: url(images/dialog.png) left top no-repeat;
+}
+
+#treeview a {
+    color: black;
+}
+
+#editor {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 600px;
+    margin: 10px;
+    box-shadow: 0 0 3px 0px #888;
+}
+
+#editor #nodeDialog {
+    width: 586px;
+    height: 400px;
+    resize: vertical;
+}
+
+#editor input {
+    width: 586px;
+    margin: 0 0 15px 0;
+}
+
+#editor label {
+    font-variant: small-caps;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    color: #aaa;
+}
+
+#editor p {
+    margin: 10px 0 0 0;
+}
+
+form {
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    width: calc(100% - 660px);
+    margin-bottom: 0px;
+}
+
+.nav-tabs .active a, .nav-tabs .active a:hover {
+    background: #EFEFEF;
+}

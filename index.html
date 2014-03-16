@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Dialog Editor</title>
+	<meta charset="UTF-8" />
+
+    <script src="js/jquery-2.0.3.min.js"></script>
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/editor.js"></script>
+    
+	<link rel='stylesheet' href="style/jqueryFileTree.css" type="text/css" media="all" />
+    <link rel='stylesheet' href="style/bootstrap.min.css" type="text/css" media="all" />
+	<link rel='stylesheet' href="style/style.css" type="text/css" media="all" />    
+</head>
+<body>
+
+    <ul class="nav nav-tabs nav-justified">
+        <li class="active"><a href="#">Story</a></li>
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">Analytics</a></li>
+    </ul>
+
+    <!-- Main -->
+    <div id="treeview">
+        
+    </div>
+    
+    <div id="editor" class="well">
+        <form>
+            <input type="hidden" id="nodeID" name="nodeID">
+            
+            <label for="nodeTitle">node title</label>
+            <input type="text" name="nodeTitle" id="nodeTitle" value="">
+            
+            <label for="nodeAction">node action</label>
+            <input type="text" name="nodeAction" id="nodeAction" value="">
+        
+            <label for="nodeDialog">node dialog</label>
+            <textarea id="nodeDialog" name="nodeDialog"></textarea>
+
+            <button type="submit" class="btn btn-primary" id="updateNode">Update Node</button>
+            <button type="submit" class="btn" id="createNode">Create Child Node</button>
+            
+            <div class="btn-group dropup pull-right">
+                <button class="btn dropdown-toggle btn-danger" data-toggle="dropdown">Delete Node &nbsp; <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a href="#" id="deleteConfirm">Confirm</a></li>
+                </ul>
+            </div>
+            
+            <br>
+            <p class="text-info" id="status"></p>
+        </form>
+    </div>
+</body>
+</html>
