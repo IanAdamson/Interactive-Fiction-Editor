@@ -1,5 +1,5 @@
 <?php
-$MySQLHost     = "localhost";           // MySQL Host. Usually mysql.
+$MySQLHost     = "localhost";           // MySQL Host. Usually localhost.
 $MySQLDatabase = "interactive_fiction"; // Database.
 $MySQLUsername = "if_usr";              // Database Username.
 $MySQLPassword = "QbBqFRz2YLTRsnLp";    // Database Password. 
